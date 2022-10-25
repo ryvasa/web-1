@@ -1,15 +1,16 @@
 body {
   margin: 0;
   padding: 0;
+  scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 
-/* section {
-  min-height: 600px;
-} */
 /*navbar*/
 .navbar {
   position: fixed;
-  z-index: 1;
+  z-index: 1111;
 }
 .navbar-brand {
   font-size: 50 px;
@@ -47,40 +48,30 @@ body {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-
-.about h2 {
-  width: 25%;
-  border-bottom: 3px solid #fa9c05;
-  margin: auto;
-}
 .about h2,
 p {
-  padding-bottom: 5px;
+  padding-bottom: 25px;
 }
 
 /* portfolio */
 .portfolio {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
 }
-.portfolio h2 {
-  width: 25%;
-  border-bottom: 3px solid #fa9c05;
-  margin: auto;
-}
 /* contact */
 .contact {
+  padding-top: 50px;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1));
   padding-bottom: 80px;
 }
-.contact h2 {
-  width: 25%;
-  border-bottom: 3px solid #fa9c05;
-  margin: 30px auto;
-}
 .contact form {
+  margin-top: 50px;
   padding: 25px;
   border: 1px solid #fa9c05;
   border-radius: 20px;
+}
+
+.contact h2 {
+  padding-bottom: 0px;
 }
 /* footer */
 .footer {
@@ -94,6 +85,18 @@ footer p {
 footer p a {
   text-decoration: none;
   color: black;
+}
+/* mobile */
+@media (max-width: 992px) {
+  .navbar {
+    background-size: contain;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+    box-shadow: 1px 1px 5px black;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: black;
+  }
 }
 /*desktop*/
 @media (min-width: 992px) {
@@ -109,6 +112,19 @@ footer p a {
     margin: auto;
     padding-bottom: 3px;
     margin-bottom: -8px;
+  }
+
+  .about h2,
+  .portfolio h2 {
+    width: 25%;
+    border-bottom: 3px solid #fa9c05;
+    margin: auto;
+  }
+  .contact h2 {
+    padding-bottom: 15px;
+    width: 25%;
+    border-bottom: 3px solid #fa9c05;
+    margin: auto;
   }
 }
 
