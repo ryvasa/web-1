@@ -55,12 +55,13 @@ p {
 
 /* portfolio */
 .portfolio {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8));
+  padding-top: 50px;
 }
 /* contact */
 .contact {
   padding-top: 50px;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1));
   padding-bottom: 80px;
 }
 .contact form {
@@ -90,7 +91,7 @@ footer p a {
 @media (max-width: 992px) {
   .navbar {
     background-size: contain;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
     box-shadow: 1px 1px 5px black;
   }
   .navbar a {
@@ -139,7 +140,7 @@ footer p a {
   }
   100% {
     opacity: 1;
-    margin-top: 400px;
+    margin-top: 500px;
   }
 }
 @keyframes nav-brand {
