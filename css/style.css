@@ -18,7 +18,7 @@ body {
 }
 /*hero*/
 .jumbotron {
-  background-image: url(../img/grey-geometrical-shapes-background.jpg);
+  background-image: url(../img/grey-geometrical-shapes-background.resized.jpg);
   background-size: cover;
   height: 1080px;
   position: relative;
